@@ -3,7 +3,8 @@ project:
   source_files:
     - toplevel_chip.v
     - chip.sv
-    - decoder.v
+    - mul_16.sv
+    - add_16.sv
   top_module:  "toplevel_chip"
 
 # As everyone will have access to all designs, try to make it easy for someone new to your design to know what
@@ -13,9 +14,9 @@ project:
 #
 # This info will be automatically collected and used to make a datasheet for the chip.
 documentation: 
-  author:       "PLACEHOLDER"      # Your name
-  discord:      ""      # Your discord handle
-  title:        "PLACEHOLDER"      # Project title
+  author:       "Sri Lakshmi Vemulapalli"
+  discord:      "Sri"      # Your discord handle
+  title:        "16-Bit Floating Point Unit (Adder and Multiplier)"      # Project title
   description:  "PLACEHOLDER"      # Short description of what your project does
   how_it_works: "PLACEHOLDER"      # Longer description of how the project works
   how_to_test:  "PLACEHOLDER"      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
