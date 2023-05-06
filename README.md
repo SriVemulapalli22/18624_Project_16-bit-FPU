@@ -87,5 +87,5 @@ First Clock Cycle:
 
 Simulation Results: 
 
-![](Picture4.png)
+![](Picture3.png)
 
