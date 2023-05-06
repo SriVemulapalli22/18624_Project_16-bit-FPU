@@ -54,7 +54,7 @@ Module fpu_16_tb has the testbench used for testing the design. It also contains
 For Example: 
 
 Inputs: 
-If Inputs A = 16Õh4D3D and B = 16Õh48EA
+If Inputs A = 16'h4D3D and B = 16'h48EA
 Select would be high for Addition. Expected Result would be: 16'h4FB2
 
 In this configuration the test bench would be something very similar to: 
@@ -78,10 +78,10 @@ io_in[9] = 1	- Making Control signal high to give inputs.
 3. In the next clock cycle, the control signal io_in[9] is made low. 
 4. In the next 2 clock cycles, the output is generated out through the io_out port as below: 
 First Clock Cycle: 
-	io_out[7:0] 	- ÔB2
+	io_out[7:0] 	- 'B2
 	io_out[8] 		- 1
 	Next Clock Cycle:
-	io_out[7:0] 	- Ô4F
+	io_out[7:0] 	- '4F
 	io_out[8] 		- 1
 ## Media
 
