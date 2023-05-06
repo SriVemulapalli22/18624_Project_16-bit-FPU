@@ -82,9 +82,7 @@ io_in[9] = 1	- Making Control signal high to give inputs.
 * Next Clock Cycle:
 	io_out[7:0] 	- '4F
 	io_out[8] 		- 1
-## Media
-
-Simulation Results: 
+## Simulation Results: 
 
 ![](Picture3.png)
 
