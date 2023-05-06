@@ -29,20 +29,20 @@ Inputs:
 To give in two 16-bit Inputs, we are doing it in 4 cycles. 10 of the 12 available ports are used.
 
 
-IO_IN [3:0] 	-	Input for Signal A
-IO_IN [7:4] 	-	Input for Signal B
-IO_IN [8]		- 	Select Signal
-IO_IN [9]		-	Control Signal
-IO_IN [11:10]	-	Not Used
+* IO_IN [3:0] 	-	Input for Signal A
+* IO_IN [7:4] 	-	Input for Signal B
+* IO_IN [8]		- 	Select Signal
+* IO_IN [9]		-	Control Signal
+* IO_IN [11:10]	-	Not Used
 
 Output: 
 
 To receive a 16-bit output along with the valid signal, we do it in 2 cycles. 9 of the 12 available ports are used.
 
 
-IO_OUT [7:0]	-	Output Data. 
-IO_OUT [8]		- 	Valid Signal. 
-IO_OUT [11:9]	-	Not Used
+* IO_OUT [7:0]	-	Output Data. 
+* IO_OUT [8]		- 	Valid Signal. 
+* IO_OUT [11:9]	-	Not Used
 
 ## Design Testing
 
