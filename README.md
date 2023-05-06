@@ -6,7 +6,14 @@ By: Sri Lakshmi
 ## Overview
 
 A 16-bit Floating point Unit (Adder and Multiplier) follows FP-16 (half-precision) format. A select signal is used to choose between Addition and Multiplication of two 16-bit Input Floating Point Numbers. The 16-bit signals use 1 bit for the sign, 5 bits for the exponent, and 10 bits for the significand or mantissa. 
-Along with two 16-bit input signals, select and control signals are given as inputs. The resultant output is a 16-bit result and a valid signal. 
+Along with two 16-bit input signals, select and control signals are given as inputs. The resultant output is a 16-bit result and a valid signal.
+
+* Format: Sign - 1 bit Exponent - 5 bits Mantissa - 10 bit
+* Exception Encoding
+* NaN 0 11111 1111111111
+* +∞ 0 11111 0000000000
+* −∞ 1 11111 0000000000
+* Underflow 0 00000 0000000000
 
 ## How it Works
 
