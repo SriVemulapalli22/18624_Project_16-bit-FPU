@@ -17,29 +17,37 @@ documentation:
   author:       "Sri Lakshmi Vemulapalli"
   discord:      "Sri"      # Your discord handle
   title:        "16-Bit Floating Point Unit (Adder and Multiplier)"      # Project title
-  description:  "PLACEHOLDER"      # Short description of what your project does
-  how_it_works: "PLACEHOLDER"      # Longer description of how the project works
-  how_to_test:  "PLACEHOLDER"      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
-  external_hw:  "PLACEHOLDER"      # Describe any external hardware needed
-  language:     "verilog" # other examples include Verilog, Amaranth, VHDL, etc
+  description:  "A 16-bit Floating point Unit (Adder and Multiplier) follows FP-16 (half-precision) format. A select signal is used to choose between Addition and Multiplication of two 16-bit Input Floating Point Numbers. The 16-bit signals use 1 bit for the sign, 5 bits for the exponent, and 10 bits for the significand or mantissa. Along with two 16-bit input signals, select and control signals are given as inputs. The resultant output is a 16-bit result and a valid signal."
+  how_it_works: "An FSM is used in the top-level to control all the inputs, outputs, and control signals. The select signal is set to high for Addition and low for multiplication. The control signal is set to high when the inputs are given to the system and is low for the rest of the operations. Each Sub Module (Adder and Multiplier) takes in 2 16-bit data input values and results in One 16-bit Result and a valid signal. The Sub Modules are Combinational. The 16-bit inputs take in 4 cycles to fully obtain. And the 16-bit outputs take in 2 cycles to be generated out.  "
+  how_to_test:  "For the testing of the design, the FSM is configured from a test bench. The inputs are given in 4 different clock cycles. The control signal is set high along with configuring the select signal. In the next 4 consecutive clock cycle, the inputs are passed through the above-mentioned configuration. Once the inputs are passed, the control signal goes low, and the results are populated in the next two consecutive clock cycles along with the valid signal. Module fpu_16_tb has the testbench used for testing the design. It also contains the checker scripts and validates the received results with the expected ones."      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
+  external_hw:  "None"      # Describe any external hardware needed
+  language:     "SystemVerilog" # other examples include Verilog, Amaranth, VHDL, etc
   doc_link:     ""      # URL to longer form documentation, eg the README.md in your repository
   clock_hz:     1000       # Clock frequency in Hz (if required)
   picture:      ""      # relative path to a picture in your repository
   inputs:               # a description of what the inputs do
-    - none
-    - none
-    - none
-    - none
-    - none
-    - none
+    - Input 1a
+    - Input 2a
+    - Input 3a
+    - Input 4a
+    - Input 1b
+    - Input 2b
+    - Input 3b
+    - Input 4b
+    - Input select
+    - Input control
     - none
     - none
   outputs:
-    - none
-    - none
-    - none
-    - none
-    - none
+    - Output Result 1
+    - Output Result 2
+    - Output Result 3
+    - Output Result 4
+    - Output Result 5
+    - Output Result 6
+    - Output Result 7
+    - Output Result 8
+    - Output Valid 
     - none
     - none
     - none
