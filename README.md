@@ -10,10 +10,10 @@ Along with two 16-bit input signals, select and control signals are given as inp
 
 * Format: Sign - 1 bit Exponent - 5 bits Mantissa - 10 bit
 * Exception Encoding
-* NaN 0 11111 1111111111
-* +∞ 0 11111 0000000000
-* −∞ 1 11111 0000000000
-* Underflow 0 00000 0000000000
+** NaN 0 11111 1111111111
+** +∞ 0 11111 0000000000
+** −∞ 1 11111 0000000000
+** Underflow 0 00000 0000000000
 
 ## How it Works
 
