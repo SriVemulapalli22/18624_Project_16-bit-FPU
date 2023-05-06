@@ -62,16 +62,16 @@ In this configuration the test bench would be something very similar to:
 io_in[8] = 1	- Making select high for addition. 
 io_in[9] = 1	- Making Control signal high to give inputs.
 2. In the next consecutive clock cycles, the input data is given as below. 
-    		@(negedge clock);
+		Clock Cycle 1:
     		io_in[3:0] = D
     		io_in[7:4] = A
-    		@(negedge clock);
+		Clock Cycle 2:
     		io_in[3:0] = 3
     		io_in[7:4] = E
-    		@(negedge clock);
+		Clock Cycle 3:
     		io_in[3:0] = D
     		io_in[7:4] = 8
-    		@(negedge clock);
+		Clock Cycle 4:
     		io_in[3:0] = 4
     		io_in[7:4] = 4
     		@(negedge clock);
